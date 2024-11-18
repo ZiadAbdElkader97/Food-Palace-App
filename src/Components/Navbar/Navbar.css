@@ -1,0 +1,123 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.nav-sec1 .logo-img {
+  width: 160px;
+}
+.nav-sec2 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.nav-sec2 ul li a {
+  color: var(--menu-color);
+  transition: var(--main-transition);
+}
+.nav-sec2 #home {
+  color: var(--menu-color);
+}
+.navbar .nav-sec3 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav-sec3 .nav-basket {
+  position: relative;
+}
+.nav-sec3 .search_icon {
+  cursor: pointer;
+}
+.nav-sec3 .nav-basket .basket_icon {
+  cursor: pointer;
+}
+.nav-sec3 .nav-basket .nav-dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  top: -8px;
+  right: -8px;
+}
+.nav-sec3 button {
+  background: transparent;
+  font-size: 16px;
+  color: var(--menu-color);
+  border: 1px solid var(--menu-color);
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.nav-sec3 button:hover {
+  background-color: var(--hover-color);
+}
+.active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--menu-color);
+}
+@media (max-width: 1050px) {
+  .nav-sec1 .logo-img{
+    width: 140px;
+  }
+  .nav-sec2 {
+    gap: 15px;
+    font-size: 15px;
+  }
+  .nav-sec3 {
+    gap: 30px;
+  }
+  .nav-sec3 img {
+    width: 22px;
+  }
+  .nav-sec3 button {
+    padding: 8px 25px;
+  }
+}
+@media (max-width: 900px) {
+  .nav-sec1 .logo-img {
+    width: 120px;
+  }
+  .navbar .nav-sec2 {
+    gap: 12px;
+    font-size: 15px;
+  }
+  .navbar .nav-sec3 {
+    gap: 20px;
+  }
+  .navbar .nav-sec3 img {
+    width: 20px;
+  }
+  .navbar .nav-sec3 button {
+    padding: 7px 20px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 780px) {
+  .nav-sec1 .logo-img {
+    width: 100px;
+  }
+  .navbar .nav-sec2 {
+    display: none;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .navbar .nav-sec1 .logo-img {
+    width: 120px;
+  }
+  .navbar .nav-sec3 {
+    gap: 25px;
+  }
+  .navbar .nav-sec3 img {
+    width: 28px;
+  }
+  .navbar .nav-sec3 button {
+    font-size: 15px;
+    padding: 12px 30px;
+  }
+}

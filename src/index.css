@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --main-color: #e74c3c;
+  --branch-color: #c0392b;
+  --menu-color: #49557e;
+  --hover-color: #fff4f2;
+  --main-fontFamily: "Inter", sans-serif;
+  --branch-fontFamily: "Ubuntu", sans-serif;
+  --main-transition: 0.3s;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--main-fontFamily);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Screen:
+  =======================
+
+/* Mobile Devices */
+@media (min-width: 320px) and (max-width: 479px) {
+}
+
+/* Tablets - IPads */
+@media (min-width: 480px) and (max-width: 767px) {
+}
+
+/* Small Screens (Laptops) */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+}
+
+/* X-Large devices (large desktops) */
+@media (min-width: 1200px) {
+}
+
+/* ============================= */
